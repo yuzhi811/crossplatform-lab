@@ -1,0 +1,225 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+section > .firstcont {
+  width: 70%;
+}
+section h1 {
+  font-size: 2em;
+  color: #133854;
+}
+#coname {
+  position: absolute;
+}
+.pagetitle {
+  text-align: center;
+}
+nav,
+footer,
+nav a,
+footer a {
+  background-color: #133854;
+  color: white;
+  font-size: 20pt;
+}
+nav {
+  text-align: left;
+  padding: 10px;
+}
+p {
+  margin-bottom: 15px;
+}
+form {
+  font-size: 18px;
+}
+label {
+  color: #133854;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+input {
+  width: 180px;
+  height: 25px;
+  /* margin-top: 10px; */
+}
+.borderBox {
+  border: 1px solid black;
+  padding: 10px;
+  width: 240px;
+}
+
+img {
+  width: 180px;
+  height: 100px;
+  margin-left: auto;
+}
+/* .imgContainer img {
+  position: fixed;
+} */
+/* .imgContainer{
+  display: block;
+  color: #d7ba7d;
+  float: left;
+  font-size: 24px;
+  margin: 40px;
+  width: 75%;
+  height: 250px;
+  border: 1px solid #bcbcbc;
+  background-image: url( "file:///C:/Users/user/Desktop/%7B2022Fall%7D/web%20design/Lab7/lab7/images/sleepingcats.jpg" );
+  background-repeat: no-repeat;
+  overflow: auto;
+} */
+.imgContainer {
+  float: right;
+  width: 30%;
+  position: fixed;
+  right: 0;
+}
+/* .imgContainer {
+  float: right;
+  width: 30%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+} */
+.marginp {
+  margin: 0;
+}
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+.firstContainer {
+  /* clear: right; */
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-wrap: nowrap;
+  /* overflow-x: auto; */
+}
+/* flex box */
+.container,
+.container2 {
+  margin: 50px;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: 450px;
+}
+
+.firstLine {
+  display: flex;
+  flex-direction: row;
+}
+.firstLine > .item2,
+.timeContainer > .leaveBox {
+  padding: 0 40px;
+}
+/* flex- days needed  */
+.daysNeeded {
+  display: flex;
+  flex-direction: row;
+}
+
+.daysNeeded > div {
+  flex-direction: column;
+  margin: 0 8px;
+}
+.daysNeeded input,
+.borderBox input,
+.spayed,
+.special {
+  width: 13px;
+  height: 20px;
+}
+#territorialText {
+  width: 200px;
+  margin-top: 10px;
+  height: 25px;
+}
+.timeContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 두번째 컨테이너 */
+.container2 {
+  display: flex;
+  flex-direction: row;
+}
+.col2 {
+  margin: 0 1rem;
+  width: 200px;
+}
+
+.col2 > p {
+  margin-top: 0;
+}
+.row2 div {
+  padding-left: 15rem;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.imgContainer img {
+  width: 400px;
+  height: 300px;
+}
+/* submit */
+.submit {
+  border-radius: 10px;
+  height: 40px;
+  font-size: larger;
+  background-color: #133854;
+  color: white;
+}
+
+.submit:hover {
+  background-color: rgb(164, 192, 235);
+  color: #133854;
+  cursor: pointer;
+}
+.alert {
+  color: #f06e04;
+  font-size: 15px;
+}
+/* Float */
+.rightFloat {
+  float: right;
+  position: absolute;
+}
+/* Javascript */
+.hidden {
+  display: none;
+}
+
+/* footer */
+footer {
+  text-align: right;
+  padding: 10px;
+}
+
+footer img {
+  height: 30px;
+  width: 40px;
+  padding-right: 10px;
+  float: left;
+  padding-top: 20px;
+}
+.footerImg {
+  height: 30px;
+  width: 100px;
+  padding-right: 10px;
+  float: left;
+}
+
+address {
+  font-style: normal;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Yeji Yoon" />
+    <meta name="email" content="yoon0029@algonquinlive.com" />
+    <title>Fluffy Friends Cat Daycare</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js" defer></script>
+    <script src="jquery-3.6.1.min.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/fluffylogo(300X300).png" alt="happy cat logo" />
+      <img
+        id="coname"
+        src="images/companyname(1113X300).jpg"
+        alt="fluffy friends cat daycare"
+      />
+    </header>
+    <nav>
+      <a href="index.html">HOME</a>
+    </nav>
+    <div class="imgContainer"><img src="images/sleepingcats.jpg" alt="sleeping cats"></div>
+
+    <section class="firstContainer">
+          <!-- <div class="imgContainer"><img src="images/sleepingcats.jpg" alt="sleeping cats"></div> -->
+
+          <section class="firstcont">
+      <h1>Cat Intake Form</h1>
+    <form name="form" class="formBox">
+      <div class="container">
+        <div class="col1">
+          <div class="firstLine">
+            <div class="item1">
+              <label for="catName">Name of Cat</label><br />
+              <input
+                type="text"
+                id="catName"
+                name="catName"
+                placeholder="Mr.Whiskers"
+              /><br />
+              <span class="alert" id="cNameError"></span><br /><br />
+            </div>
+            <div class="item2">
+              <label for="catAge">Age of Cat</label><br />
+              <input
+                type="text"
+                id="catAge"
+                name="catAge"
+                placeholder="2"
+              /><br />
+              <span class="alert" id="cAgeError"></span><br /><br />
+            </div>
+          </div>
+          <!-- days needed -->
+          <p class="marginp">Days needed</p>
+          <div class="daysNeeded">
+            <div>
+              <label for="mon">Mon</label><br />
+              <input type="checkbox" class='boxChecked boxCheckedMon' id="mon" name="mon" value="mon" />
+            </div>
+            <div>
+              <label for="tue">Tue</label><br />
+              <input type="checkbox" id="tue" class='boxChecked boxCheckedTue' name="tue" value="tue" />
+            </div>
+            <div>
+              <label for="wed">Wed</label><br />
+              <input type="checkbox" id="wed" class='boxChecked boxCheckedWed' name="wed" value="wed" />
+            </div>
+            <div>
+              <label for="thu">Thu</label><br />
+              <input type="checkbox" id="thu" class='boxChecked boxCheckedThu' name="thu" value="thu" />
+            </div>
+            <div>
+              <label for="fri">Fri</label><br />
+              <input type="checkbox" id="fri" class='boxChecked boxCheckedFri' name="fri" value="fri" />
+            </div>
+            <div>
+              <label for="sat">Sat</label><br />
+              <input type="checkbox" id="sat" name="sat" value="sat" disabled />
+            </div>
+            <div>
+              <label for="sun">Sun</label><br />
+              <input type="checkbox" id="sun" name="sun" value="sun" disabled />
+            </div>
+          </div>
+
+          <span class="alert" id="checkboxError"></span><br />
+<!-- Time -->
+<div class="timeContainer">
+  <div>
+          <label for="Arrive">Time Arrive</label><br />
+          <input
+            type="text"
+            class="arrive"
+            name="arrive"
+            placeholder="9:30 AM"
+          /><br />
+          <select id="arrive" name="arrive" class="arrive"> 
+            <option value="">select</option>
+            <option value="a">10:00AM</option>
+            <option value="b">10:30AM</option>
+            <option value="c">11:00AM</option>
+            <option value="d">11:30AM</option>
+            <option value="e">12:00PM</option>
+            <option value="f">12:30PM</option>
+            <option value="g">13:00PM</option>
+            <option value="h">13:30PM</option>
+            <option value="i">14:00PM</option>
+            <option value="j">14:30PM</option>
+            <option value="k">15:00PM</option>
+            <option value="l">15:30PM</option>
+            <option value="m">16:00PM</option>
+            <option value="n">16:30PM</option>
+            <option value="o">17:00PM</option>
+            <option value="p">17:30PM</option>
+            <option value="q">18:00PM</option>
+          </select>
+          <span class="alert" id="arriveError"></span><br /><br />
+        </div>
+        <div class="leaveBox">
+          <label for="Leave">Time Leave</label><br />
+          <input
+            type="text"
+            class="leave"
+            name="Leave"
+            placeholder="4:30 PM"          /><br />
+
+            <select name="leave" class="leave"> 
+              <option value="">select</option>
+              <option value="a">10:00AM</option>
+              <option value="b">10:30AM</option>
+              <option value="c">11:00AM</option>
+              <option value="d">11:30AM</option>
+              <option value="e">12:00PM</option>
+              <option value="f">12:30PM</option>
+              <option value="g">13:00PM</option>
+              <option value="h">13:30PM</option>
+              <option value="i">14:00PM</option>
+              <option value="j">14:30PM</option>
+              <option value="k">15:00PM</option>
+              <option value="l">15:30PM</option>
+              <option value="m">16:00PM</option>
+              <option value="n">16:30PM</option>
+              <option value="o">17:00PM</option>
+              <option value="p">17:30PM</option>
+              <option value="q">18:00PM</option>
+            </select>
+  
+          <span class="alert" id="leaveError"></span><br /><br />
+        </div>
+        </div>
+          <input type="checkbox" class="spayed" name="spayed" value="spayed" />
+          <label for="spayed">Cat Spayed/Neutered</label><br />
+
+          <input type="checkbox" class="special" name="special" value="special" />
+          <label for="special">Special Diet</label><br />
+
+          <label for="describe" class="describe hidden">Describe Diet</label><br />
+          <input
+            type="text"
+            class="describeText hidden"
+            name="describe"
+            id="describeText"
+          /><br />
+          <span class="alert" id="describeTextError"></span><br /><br />
+
+
+        </div>
+                  <span class="alert" class="lNameError"></span><br /><br />
+               
+
+
+        <!-- Second column -->
+        
+        <div class="col2">
+          <p>Temperament of Cat</p>
+          <div class="borderBox">
+            <input
+              type="radio"
+              id="friendly"
+              name="temperament"
+              value="friendly"
+              onclick="checkedNotTerri()"
+              checked="checked"
+            />
+            <label for="friendly">Friendly</label><br />
+            <input
+              type="radio"
+              id="sleepy"
+              name="temperament"
+              value="sleepy"
+              onclick="checkedNotTerri()"
+            />
+            <label for="sleepy">Sleepy</label><br />
+            <input
+              type="radio"
+              id="independent"
+              name="temperament"
+              value="independent"
+              onclick="checkedNotTerri()"
+            />
+            <label for="independent">Independent</label><br />
+            <!-- //territorial -->
+            <input
+              type="radio"
+              class="territorialTitle"
+              name="temperament"
+              value="territory"
+              onclick="checkedTerri()"
+            />
+            <label>Territorial</label><br />
+            <label class="describelabel hidden">Describe Territorial</label><br />
+            <input
+              type="text"
+              id="territorialText"
+              class="describelabel hidden"
+              name="territorial"
+              placeholder=""
+            /><br />
+            <span class="alert" id="temperamentTextError"></span><br /><br />
+          </div>
+     
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+      <!--  -->
+      <div class="container2">
+        <div class="row2">
+          <label for="OwnerName">Owner's Name</label><br />
+          <input
+            type="text"
+            id="OwnerName"
+            name="OwnerName"
+            placeholder="Cat Owner"
+          /><br />
+          <span class="alert" id="OwnerNameError"></span><br /><br />
+
+          <label for="daytimePhone">Daytime Phone</label><br />
+          <input
+            type="text"
+            id="daytimePhone"
+            name="daytimePhone"
+            placeholder="(123)-456-7980"
+           
+          /><br />
+          <span class="alert" id="daytimePhoneError"></span><br /><br />
+
+          <label for="cellphone">Cell Phone</label><br />
+          <input
+            type="text"
+            id="cellphone"
+            name="cellphone"
+            placeholder="(123)-456-7980"
+          /><br />
+          <span class="alert" id="cellphoneError"></span><br /><br />
+
+          <label for="email">Email</label><br />
+          <input type="text" id="email" name="lastName" placeholder="catowner@fluffy.com" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*"> <br />
+          <span class="alert" id="emailError"></span><br /><br />
+          <input type="submit" value="Submit" class="submit" />
+
+        </div>
+
+        <div class="row2">
+          <div>
+            <label for="emergency">Emergency Contact Name</label><br />
+            <input
+              type="text"
+              id="emergency"
+              name="emergency"
+              placeholder="Cat Friend"
+            /><br />
+            <span class="alert" id="emergencyNameError"></span><br /><br />
+
+            <label for="contact">Contact Phone</label><br />
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="(123)-456-7980"
+            /><br />
+            <span class="alert" id="contactError"></span><br /><br />
+          </div>
+      </div>
+      <!-- img -->
+    </form>
+    <!-- <div class="clearfix">
+      <img src="images/sleepingcats.jpg" alt="sleeping cats">
+    </div> -->
+    </section>
+  </section>
+  <footer>
+    <img src="images/PetDiversityPlusLogo.png" alt="pet diversty plus" />
+    <img src="images/BBBcertified.png" alt="BBB" class="footerImg" />
+    <address>
+      123 Fluffy Street<br />
+      Ottawa, Ontario
+    </address>
+    (613) 123-CATS<br />
+    <a
+      href="mailto:fluffyfriends@catdaycare.ca?subject=inquiry%20from%20website"
+    >
+      fluffyfriends@catdaycare.ca</a
+    >
+  </footer>
+  </body>
+</html>
