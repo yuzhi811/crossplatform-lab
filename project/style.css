@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  font-family: Source Sans Pro;
+}
+
+.titlepadding {
+  padding-left: 20px;
+}
+/* .logo {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+} */
+a {
+  text-decoration: none;
+  color: rgb(58, 38, 3);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a491a1af;
+  padding: 8px 12px;
+}
+.navbar_logo {
+  font-size: 24px;
+  color: #3a2603;
+}
+.navbar_logo i {
+  font-size: 25px;
+  color: #5c265a;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 8px 12px;
+  justify-content: space-around;
+}
+.navbar_menu li:hover {
+  background-color: #c1e0eb;
+  border-radius: 4px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: #3a2603;
+  display: flex;
+}
+.navbar_icons li {
+  padding: 8px 12px;
+  justify-content: space;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .narbar_menu li {
+    width: 100%;
+  }
+  .navbar_icons {
+    align-items: center;
+  }
+}
+
+/* index */
+.banner {
+  position: relative;
+}
+.bannerfont {
+  font-size: 40px;
+}
+.banner img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.banner h1 {
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  left: 10%;
+  font-family: "Times New Roman", Times, serif;
+}
+.bestsellers {
+  margin-top: 20px;
+}
+.bestsellers img {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.newarrivals img {
+  width: 300px;
+  height: 300px;
+}
+.subpage {
+  padding: 70px;
+}
+.subpage img {
+  width: 410px;
+  height: 300px;
+}
+.rightfloater {
+  float: right;
+  padding-left: 20px;
+  /* padding: 0 0 20px 20px; */
+}
+.leftfloater {
+  float: left;
+  /* padding: 0 20px 20px 0; */
+  width: 35%;
+  margin: 50px 0 0 100px;
+}
+.leftfloater p {
+  font-size: 20px;
+}
+.clearfix {
+  overflow: auto;
+}
+.products {
+  padding: 10px;
+  border: 3px solid #5c265a;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  width: fit-content;
+}
+.products a:hover {
+  text-decoration: underline;
+}
+/* .container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.card {
+  /* background: #fff;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.thumb {
+  padding-bottom: 5%;
+  background-size: cover;
+  background-position: center center;
+}
+/* article {
+  flex: 1;
+} */
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.item {
+  margin: 10px;
+}
+.item img {
+  width: 350px;
+}
+.itemheight img {
+  height: 470px;
+}
+
+/* Table */
+
+table {
+  margin: 50px;
+  width: 900px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+thead {
+  border-top: 2px solid #333;
+}
+th {
+  background-color: #c1e0eb;
+}
+caption {
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+  clear: both;
+}
+
+/* gallery */
+.valueLists {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.value {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  flex-basis: 50%;
+  margin: 30px 0;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.pict {
+  font-size: 70px;
+  text-align: center;
+}
+
+.values {
+  flex: auto;
+  background-color: #c1e0eb;
+}
+/* .image{
+  vertical-align: top;
+} */
+.valueLists .ment {
+  flex: none;
+  flex-basis: 40px;
+  min-height: 0;
+  margin-top: 10px;
+  text-align: center;
+  /* font-size: 13px; */
+}
+
+.boxsize {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* form */
+.formmargin {
+  margin: 10px;
+}
+
+.formdesign {
+  width: 360px;
+  padding: 20px;
+  margin: 20px 60px;
+  background-color: #ccc;
+}
