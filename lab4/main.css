@@ -1,0 +1,89 @@
+#coname {
+  position: absolute;
+}
+.pagetitle {
+  text-align: center;
+}
+nav,
+footer,
+nav a,
+footer a {
+  background-color: #133854;
+  color: white;
+  font-size: 20pt;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  font-size: 22pt;
+}
+
+section img {
+  height: 200px;
+}
+.rightfloater {
+  float: right;
+  padding: 0 0 20px 20px;
+}
+.leftfloater {
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+  clear: both;
+}
+
+footer img {
+  height: 30px;
+  padding-right: 10px;
+  float: left;
+}
+
+address {
+  font-style: normal;
+}
+
+/* schedule */
+table {
+  margin: 30px;
+  width: 1000px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th,
+td {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  width: 120px;
+}
+.days {
+  background-color: rgb(162, 186, 246);
+}
+
+/* form */
+.formcenter {
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+form {
+  width: 500px;
+  margin: auto;
+}
+/* register */
+div button {
+  font-size: 22px;
+}
+/* project */
+.underline {
+  text-decoration: underline;
+}
